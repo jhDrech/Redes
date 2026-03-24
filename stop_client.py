@@ -14,3 +14,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as cliente:
     cliente.sendall(input("Cor: ").encode("utf-8"))
     cliente.sendall(input("C/E/P: ").encode("utf-8"))
     cliente.sendall(input("MSE: ").encode("utf-8"))
+    print(cliente.recv(1024).decode("utf-8"))
